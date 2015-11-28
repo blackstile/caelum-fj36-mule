@@ -1,0 +1,89 @@
+INFO  2015-11-28 16:12:33,590 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'fj36-pedidos'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2015-11-28 16:12:33,810 [main] org.mule.util.JdkVersionUtils: We are looking into adding support for this JDK version. Use it at your own risk.
+INFO  2015-11-28 16:12:33,825 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2015-11-28 16:12:34,025 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@4eaf3684: startup date [Sat Nov 28 16:12:34 BRST 2015]; root of context hierarchy
+WARN  2015-11-28 16:12:36,128 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2015-11-28 16:12:37,741 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /home/soa5387/Desktop/caelum-fj36-mule/.mule/./.mule/fj36-pedidos/queue-tx-log/tx1.log and /home/soa5387/Desktop/caelum-fj36-mule/.mule/./.mule/fj36-pedidos/queue-tx-log/tx2.log
+INFO  2015-11-28 16:12:37,774 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /home/soa5387/Desktop/caelum-fj36-mule/.mule/./.mule/fj36-pedidos/queue-xa-tx-log/tx1.log and /home/soa5387/Desktop/caelum-fj36-mule/.mule/./.mule/fj36-pedidos/queue-xa-tx-log/tx2.log
+INFO  2015-11-28 16:12:38,045 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2015-11-28 16:12:38,604 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: fj36-pedidosFlow
+INFO  2015-11-28 16:12:38,605 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@66f0548d
+INFO  2015-11-28 16:12:38,674 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: fj36-pedidosFlow.stage1
+INFO  2015-11-28 16:12:38,703 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/soa5387/Desktop/caelum-fj36-mule/.mule/apps/fj36-pedidos/fj36-pedidos.xml'}]"
+INFO  2015-11-28 16:12:38,703 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/home/soa5387/Desktop/caelum-fj36-mule/.mule/apps/fj36-pedidos/fj36-pedidos.xml'}]"
+INFO  2015-11-28 16:12:38,705 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'fj36-pedidos'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-11-28 16:12:38,707 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2015-11-28 16:12:38,707 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2015-11-28 16:12:38,766 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2015-11-28 16:12:38,768 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2015-11-28 16:12:38,770 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: fj36-pedidosFlow
+INFO  2015-11-28 16:12:38,771 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: fj36-pedidosFlow.stage1
+INFO  2015-11-28 16:12:38,863 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8082/fj36-pedidos
+INFO  2015-11-28 16:12:38,882 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2015-11-28 16:12:38,945 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: fj36-pedidos                                          *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   DevKit Extension Information                                     *
+*   Clustering Agent                                                 *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+**********************************************************************
+INFO  2015-11-28 16:19:39,629 [[fj36-pedidos].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pedido>
+    <data>2013-12-05T18:10:07.963-02:00</data>
+    <itens>
+        <item>
+          <formato>IMPRESSO</formato>
+            <quantidade>2</quantidade>
+            <livro>
+                <codigo>SEO</codigo>
+                <titulo>SEO Prático: Seu site na primeira página das buscas</titulo>
+                <tituloCurto>MEAN</tituloCurto>
+                <nomeAutor>Adriano Almeida</nomeAutor>
+                <valorEbook>19.90</valorEbook>
+                <valorImpresso>49.90</valorImpresso>
+            </livro>
+        </item>
+        <item>
+            <formato>EBOOK</formato>
+            <quantidade>1</quantidade>
+            <livro>
+                <codigo>ARQ</codigo>
+                <titulo>Introdução à Arquitetura e Design de Software</titulo>
+                <tituloCurto>Arquitetura Java</tituloCurto>
+                <nomeAutor>Paulo Silveira</nomeAutor>
+                <valorEbook>39.90</valorEbook>
+                <valorImpresso>79.90</valorImpresso>
+            </livro>
+        </item>
+        <item>
+            <formato>EBOOK</formato>
+            <quantidade>1</quantidade>
+            <livro>
+                <codigo>MEA</codigo>
+                <titulo>Mean: Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node</titulo>
+                <tituloCurto>MEAN</tituloCurto>
+                <nomeAutor>Flavio Almeido</nomeAutor>
+                <valorEbook>29.90</valorEbook>
+                <valorImpresso>59.90</valorImpresso>
+            </livro>
+        </item>
+    </itens>
+    <pagamento>
+        <status>CRIADO</status>
+        <valor>59.80</valor>
+    </pagamento>
+</pedido>
